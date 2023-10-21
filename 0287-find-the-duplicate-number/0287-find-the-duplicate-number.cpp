@@ -13,7 +13,7 @@ public:
             fast = nums[fast];
         }
         
-     return slow;
+     return fast;
     }
 };
 
