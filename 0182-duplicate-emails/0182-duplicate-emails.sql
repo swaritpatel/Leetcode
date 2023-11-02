@@ -19,4 +19,7 @@
 # p1.email = p2.email AND p1.id <> p2.id;
 
 
-SELECT email from Person group by email having count(email) >1;
+# SELECT email from Person group by email having count(email) >1;
+
+
+SELECT distinct(p1.Email) from Person p1, Person p2 where p1.id <> p2.id and p1.email = p2.email;
