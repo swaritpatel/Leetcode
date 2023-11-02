@@ -4,7 +4,11 @@
 # SELECT c.name  FROM Customers c 
 # JOIN Orders o ON c.id = o.customerId;
 
-SELECT d.name as Customers
-FROM Customers d
-LEFT JOIN Orders o ON d.id = o.customerId
-WHERE o.customerId IS NULL;
+# SELECT d.name as Customers
+# FROM Customers d
+# LEFT JOIN Orders o ON d.id = o.customerId
+# WHERE o.customerId IS NULL;
+
+ SELECT c.name as Customers FROM customers c LEFT JOIN orders o 
+ ON c.id = o.customerId
+ WHERE customerid is NULL;
