@@ -1,9 +1,5 @@
-SELECT DEPT.name AS Department, EMP.name AS Employee, EMP.salary AS 
+SELECT d.name as Department, e.name as Employee, e.salary as Salary 
+FROM Department d, Employee e 
+where d.id  = e.departmentId and (e.departmentId, e.salary) in 
+(Select departmentId, max(salary) from employee group by departmentId);
 
-Salary FROM Department DEPT, Employee EMP WHERE
-
-EMP.departmentId = DEPT.id AND (EMP.departmentId, salary) IN 
-
-(SELECT departmentId, MAX(salary) FROM Employee GROUP BY 
-
-departmentId);
