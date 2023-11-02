@@ -1,9 +1,10 @@
-# Write your MySQL query statement below
-select email from Person group by email having count(email) > 1;
+# # Write your MySQL query statement below
+# select email from Person 
+# group by email 
+# having count(email) > 1;
 
 
-# Please upvote, if you like my solution
-# 1
+
 # SELECT email from Person
 # group by email
 # having count(email) > 1;
@@ -16,4 +17,6 @@ select email from Person group by email having count(email) > 1;
 # SELECT DISTINCT(p1.email) from 
 # Person p1 JOIN Person p2 ON
 # p1.email = p2.email AND p1.id <> p2.id;
-# # feel free to ask anything, if have any doubts
+
+
+SELECT email from Person group by email having count(email) >1;
