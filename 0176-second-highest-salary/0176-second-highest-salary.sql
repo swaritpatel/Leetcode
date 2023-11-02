@@ -1,3 +1,7 @@
+# select max(salary) as secondhighestsalary
+# from employee 
+# where salary <> (select max(salary) from employee )
+
 select max(salary) as secondhighestsalary
-from employee 
-where salary <> (select max(salary) from employee )
+from employee
+where salary <> (select max(salary) from employee);
