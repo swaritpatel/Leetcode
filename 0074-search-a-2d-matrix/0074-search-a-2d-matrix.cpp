@@ -9,7 +9,7 @@ public:
         int high = (n*m)-1;
     
         while (low <= high){
-            int middle = low + (high-low)/2;
+            int middle = (low + high) /2;
             if(matrix[middle/m][middle%m] == target){
                 return true;
             }
